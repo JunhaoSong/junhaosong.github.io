@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /
+---
+
 # Junhao Song
 
 <img src="docs/image.jpg" alt="Junhao Song" width="150">
