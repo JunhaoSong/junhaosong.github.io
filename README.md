@@ -6,13 +6,13 @@
 
 I study subsurface fault structures & behaviors with massive data & generalized methods.
 
-[Email](mailto:sjh2019@berkeley.edu) · [GitHub](https://github.com/JunhaoSong) · [Google Scholar](https://scholar.google.com/citations?user=vtc-fQwAAAAJ&hl=en) · [ORCID](https://orcid.org/0000-0003-2706-0778)
+[Email](sjh2019@berkeley.edu) · [GitHub](https://github.com/JunhaoSong) · [Google Scholar](https://scholar.google.com/citations?user=vtc-fQwAAAAJ&hl=en) · [ORCID](https://orcid.org/0000-0003-2706-0778)
 
 [Research](#research) · [Publications](#publications) · [Talks](#talks) · [Service](#service)
 
 ## Research
 
-- **VORA**: Earthquake detection. [[code](https://github.com/JunhaoSong)]
+- **VORA**: Earthquake detection via unsupervised clustering. [[code](https://github.com/JunhaoSong)]
 
 <video src="docs/knn_vs_voronoi.mp4" width="100%" autoplay loop muted playsinline controls></video>
 
