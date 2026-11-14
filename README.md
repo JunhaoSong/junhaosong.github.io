@@ -1,6 +1,6 @@
 # Junhao Song
 
-<img src="https://github.com/JunhaoSong.png" alt="Junhao Song" width="150">
+<img src="docs/image.jpg" alt="Junhao Song" width="150">
 
 **Postdoctoral researcher** in Geophysics/Seismology at [UC Berkeley Seismology Lab](https://earthquakes.berkeley.edu/).
 
@@ -14,6 +14,8 @@ I study subsurface fault structures & behaviors with massive data & generalized 
 
 - **VORA**: Earthquake detection. [[code](https://github.com/JunhaoSong)]
 
+<video src="docs/knn_vs_voronoi.mp4" width="100%" autoplay loop muted playsinline controls></video>
+
 ## Publications
 
 ### 2026
@@ -25,6 +27,8 @@ I study subsurface fault structures & behaviors with massive data & generalized 
 ### 2026
 
 **Song, J.**, Zhu, W., Wang, H., Kumar, U., Taira, T. A., & Allen, R. M. (2026). Scalable Earthquake Phase Association Based on Wadati and Voronoi Diagrams. *SSA Annual Meeting 2026*, Pasadena. (Oral) [[abstract](https://seismosoc.secure-platform.com/a/solicitations/44/sessiongallery/1648/application/14424)]
+
+**Song, J.**, & Zhu, W. (2026). Turning a Global-scale Seismic Phase Database into a High-resolution Earthquake Catalog. *AGU Annual Meeting 2026*, San Francisco. (Oral) [[abstract](https://studio.m-anage.com/agu/agu26/meetingapp.cgi/Paper/2092850)]
 
 ## Service
 

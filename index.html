@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Junhao Song</title>
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #24292f; background: #fff; }
+  a { color: #0969da; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .page { display: flex; gap: 48px; max-width: 1100px; margin: 0 auto; padding: 48px 24px; }
+  .side { width: 300px; flex-shrink: 0; }
+  .links { white-space: nowrap; }
+  .side img { width: 100%; max-width: 220px; border-radius: 6px; }
+  .side h1 { font-size: 1.6em; margin: 16px 0 8px; }
+  .main { flex: 1; min-width: 0; }
+  nav { text-align: right; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; margin-bottom: 24px; }
+  nav a { margin-left: 20px; color: #57606a; }
+  nav a.active { color: #24292f; font-weight: 600; }
+  section { display: none; }
+  section.active { display: block; }
+  h3 { margin-top: 0; }
+  @media (max-width: 700px) {
+    .page { flex-direction: column; gap: 24px; }
+    .side { width: 100%; }
+    nav { text-align: left; }
+    nav a { margin: 0 16px 0 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <aside class="side">
+    <img src="docs/image.jpg" alt="Junhao Song">
+    <h1>Junhao Song</h1>
+    <p><strong>Postdoctoral researcher</strong> in Geophysics/Seismology at <a href="https://earthquakes.berkeley.edu/">UC Berkeley Seismology Lab</a>.</p>
+    <p>I study subsurface fault structures &amp; behaviors with massive data &amp; generalized methods.</p>
+    <p class="links">
+      <a href="mailto:sjh2019@berkeley.edu">Email</a> ·
+      <a href="https://github.com/JunhaoSong">GitHub</a> ·
+      <a href="https://scholar.google.com/citations?user=vtc-fQwAAAAJ&hl=en">Google Scholar</a> ·
+      <a href="https://orcid.org/0000-0003-2706-0778">ORCID</a>
+    </p>
+  </aside>
+
+  <main class="main">
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#service">Service</a>
+    </nav>
+
+    <section id="research">
+      <ul>
+        <li><strong>VORA</strong>: Earthquake detection. [<a href="https://github.com/JunhaoSong">code</a>]</li>
+      </ul>
+      <video src="docs/knn_vs_voronoi.mp4" width="100%" autoplay loop muted playsinline controls></video>
+    </section>
+
+    <section id="publications">
+      <h3>2026</h3>
+      <p><strong>Song, J.</strong>, Zhu, W., Wang, H., Kumar, U., Taira, T. A., &amp; Allen, R. M. (2026). VORA: Rapid Association of Earthquake Phases from Local to Global. <em>arXiv</em>. [<a href="https://arxiv.org/abs/2607.10450">preprint</a>] [<a href="https://github.com/JunhaoSong">code</a>]</p>
+    </section>
+
+    <section id="talks">
+      <h3>2026</h3>
+      <p><strong>Song, J.</strong>, Zhu, W., Wang, H., Kumar, U., Taira, T. A., &amp; Allen, R. M. (2026). Scalable Earthquake Phase Association Based on Wadati and Voronoi Diagrams. <em>SSA Annual Meeting 2026</em>, Pasadena. (Oral) [<a href="https://seismosoc.secure-platform.com/a/solicitations/44/sessiongallery/1648/application/14424">abstract</a>]</p>
+      <p><strong>Song, J.</strong>, &amp; Zhu, W. (2026). Turning a Global-scale Seismic Phase Database into a High-resolution Earthquake Catalog. <em>AGU Annual Meeting 2026</em>, San Francisco. (Oral) [<a href="https://studio.m-anage.com/agu/agu26/meetingapp.cgi/Paper/2092850">abstract</a>]</p>
+    </section>
+
+    <section id="service">
+      <p><strong>Reviewer for:</strong> <em>GJI</em>, <em>SRL</em>, <em>Seismica</em></p>
+    </section>
+  </main>
+
+</div>
+<script>
+  function show() {
+    var id = location.hash.slice(1) || "research";
+    if (!document.getElementById(id)) id = "research";
+    document.querySelectorAll("section").forEach(function (s) { s.classList.toggle("active", s.id === id); });
+    document.querySelectorAll("nav a").forEach(function (a) { a.classList.toggle("active", a.hash === "#" + id); });
+  }
+  document.querySelectorAll("nav a").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      history.replaceState(null, "", a.hash);
+      show();
+    });
+  });
+  window.addEventListener("hashchange", show);
+  show();
+</script>
+</body>
+</html>
